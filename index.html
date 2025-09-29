@@ -1,107 +1,27 @@
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: dimgrey;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="style-v2.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relógio Brasil</title>
+</head>
+<body>
+  <div class="header-box-top">
+    <h1>SITE EM FASE DE BETA/CONSTRUÇÃO</h1>
+  </div>
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: inherit;
-  filter: blur(8px);
-  z-index: -1;
-}
+  <div class="clock">
+    <h1>
+      <span class="box" id="horas">--</span> :
+      <span class="box" id="minutos">--</span> :
+      <span class="box" id="segundos">--</span>
+    </h1>
+    <div class="link-box">
+      <a href="https://www.xvideos.com/gay?fmc=1" target="_blank">Cllique Aqui</a>
+    </div>
+  </div>
 
-.clock {
-  background-color: rgba(128, 128, 128, 0.5);
-  padding: 40px 60px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  backdrop-filter: blur(6px);
-}
-
-.clock h1 {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  font-size: 3em;
-  margin: 0;
-  color: #fff;
-}
-
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(black,red);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  animation: colorOscillate 2s infinite;
-  font-size: 1em;
-  font-weight: bold;
-  color: white;
-}
-
-@keyframes colorOscillate {
- 50% { background: repeating-radial-gradient( black, red); }
-}
-
-.header-box-top {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  color: whitesmoke;
-  background-color: steelblue;
-  height: 100px;
-  width: 300px;
-  border: 2px solid black;
-  padding: 8px;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.link-box {
-  margin-top: 15px;
-}
-
-.link-box a {
-  color: red;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.link-box a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-  .clock {
-    padding: 20px 30px;
-  }
-
-  .clock h1 {
-    font-size: 2em;
-    gap: 5px;
-  }
-
-  .box {
-    width: 50px;
-    height: 50px;
-    font-size: 0.9em;
-  }
-
-  .header-box-top {
-    width: 90%;
-    font-size: 0.9em;
-  }
-}
+  <script src="script.js"></script>
+</body>
+</html>
