@@ -52,7 +52,7 @@ body::before {
 }
 
 @keyframes colorOscillate {
- 50% { background: repeating-radial-gradient( black, red);}
+ 50% { background: repeating-radial-gradient( black, red); }
 }
 
 .header-box-top {
