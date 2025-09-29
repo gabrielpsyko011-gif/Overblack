@@ -42,7 +42,7 @@ body::before {
   align-items: center;
   width: 70px;
   height: 70px;
-  background: repeating-radial-gradient(black, blue);
+  background: linear-gradient(black,red);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   animation: colorOscillate 2s infinite;
@@ -52,9 +52,7 @@ body::before {
 }
 
 @keyframes colorOscillate {
-  0% { background: repeating-radial-gradient(black, blue); }
-  50% { background: repeating-radial-gradient(blue, black); }
-  100% { background: repeating-radial-gradient(black, blue); }
+ 50% { background: repeating-radial-gradient( black, red); }
 }
 
 .header-box-top {
