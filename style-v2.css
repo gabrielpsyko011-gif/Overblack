@@ -103,5 +103,6 @@ body::before {
   .header-box-top {
     width: 90%;
     font-size: 0.9em;
+    margin-top: 5px;
   }
 }
